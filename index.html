@@ -16,6 +16,23 @@
             color: white;
             padding: 20px;
             text-align: center;
+            position: relative;
+        }
+        header button {
+            position: absolute;
+            top: 20px;
+            right: 20px;
+            background-color: white;
+            color: #4caf50;
+            border: 2px solid #4caf50;
+            padding: 10px 20px;
+            border-radius: 5px;
+            cursor: pointer;
+            font-weight: bold;
+        }
+        header button:hover {
+            background-color: #4caf50;
+            color: white;
         }
         section {
             padding: 20px;
@@ -38,8 +55,17 @@
             background-color: #4caf50;
             color: white;
             text-align: center;
-            padding: 10px 0;
+            padding: 20px 10px;
             margin-top: 20px;
+        }
+        img {
+            width: 100%;
+            max-width: 600px;
+            border-radius: 8px;
+            margin: 10px 0;
+        }
+        footer .contact-info {
+            margin-top: 10px;
         }
     </style>
 </head>
@@ -47,6 +73,7 @@
     <header>
         <h1>Wolify – Internet pre vás a vašu svorku!</h1>
         <p>Pripojte sa k budúcnosti internetu vo vašej obci.</p>
+        <button onclick="alert('Funkcia prihlásenia ešte nie je dostupná.')">Prihlásenie</button>
     </header>
     <section>
         <h2>Prečo si vybrať Wolify?</h2>
@@ -55,14 +82,21 @@
             <li><strong>Bezpečnosť:</strong> Vstavaná DDOS ochrana v anténe.</li>
             <li><strong>Spoľahlivé pripojenie:</strong> Stabilný a rýchly internet.</li>
         </ul>
+        <img src="benefits-image.jpg" alt="Fotka antén alebo internetu">
     </section>
     <section>
         <h2>Dostupnosť</h2>
         <p><strong>Momentálne pokrytie:</strong> Obec Vlčkovce.</p>
-        <p><strong>Pripravujeme rozšírenie:</strong> Obec Križovany Nad Dudváhom a Obec Oboj.</p>
+        <p><strong>Pripravujeme rozšírenie:</strong> Križovany Nad Dudváhom a Oboj.</p>
+        <img src="image.png" alt="Mapa alebo fotka obce">
     </section>
     <footer>
         <p>&copy; 2025 Wolify - Váš internet pre svorku</p>
+        <div class="contact-info">
+            <p><strong>Kontaktujte nás:</strong></p>
+            <p>Email: info@wolify.sk</p>
+            <p>Telefón: +421 910421713</p>
+        </div>
     </footer>
 </body>
 </html>
